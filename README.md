@@ -1,6 +1,6 @@
 # Learning task-specific subspaces via interventional post-training of speech foundation models
 
-This is the official repository for the paper "Learning task-specific subspaces via interventional post-training of speech foundation models" in Proc. Interspeech '26 (arxiv link tba).
+This is the official repository for the paper "[Learning task-specific subspaces via interventional post-training of speech foundation models](https://arxiv.org/abs/2606.17967)" in Proc. Interspeech '26.
 
 ## Installation
 
@@ -20,7 +20,7 @@ uv sync --extra cu124 # For cuda 12.4 builds of PyTorch
 
 ## Additional Requirements
 
-Evaluation on speaker verification requires the user to place the VoxCeleb1 test set in the `data/VoxCeleb1` directory. Content evaluation requires SpeechCommands, but this will be downloaded by default with torchaudio. Similarly, the test-clean set of LibriTTS will also be downloaded automatically when generating the synthetic interventional dataset.
+Evaluation on speaker verification requires the user to place the VoxCeleb1 test set in the `data/VoxCeleb1` directory. Note this directory already contains annotations for the gender of the speakers, produced by us. Content evaluation requires SpeechCommands, but this will be downloaded by default with torchaudio. Similarly, the test-clean set of LibriTTS will also be downloaded automatically when generating the synthetic interventional dataset.
 
 Generating the synthetic dataset and preprocessing features both rely on an available audio backend, e.g. ffmpeg or libsndfile, which should be installed separately.
 
