@@ -1,6 +1,8 @@
 # Learning task-specific subspaces via interventional post-training of speech foundation models
 
-This is the official repository for the paper "[Learning task-specific subspaces via interventional post-training of speech foundation models](https://arxiv.org/abs/2606.17967)" in Proc. Interspeech '26. [![doi: 10.5281/zenodo.20735589](https://zenodo.org/badge/DOI/10.5281/zenodo.20735589.svg)](https://doi.org/10.5281/zenodo.20735588)
+[![doi: 10.5281/zenodo.20735589](https://zenodo.org/badge/DOI/10.5281/zenodo.20735589.svg)](https://doi.org/10.5281/zenodo.20735588)
+
+This is the official repository for the paper "[Learning task-specific subspaces via interventional post-training of speech foundation models](https://arxiv.org/abs/2606.17967)" in Proc. Interspeech '26.
 
 ## Installation
 
