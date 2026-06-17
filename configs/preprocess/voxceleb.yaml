@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - default.yaml
+  - _self_
+
+preprocess:
+  dataset: voxceleb
+  data_dir: ${hydra:runtime.cwd}/data/VoxCeleb1/vox1_test_wav
+  output_dir: ${hydra:runtime.cwd}/precomputed_features/voxceleb
+
+hydra:
+  sweeper:
+    params:
+      preprocess.pretrained_model.name: wav2vec2, wavlm, hubert

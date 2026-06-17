@@ -1,0 +1,18 @@
+# @package _global_
+defaults:
+  - default.yaml
+  - _self_
+
+preprocess:
+  dataset: speech-commands
+  data_dir: ${hydra:runtime.cwd}/data/SpeechCommands
+  url: speech_commands_v0.01
+  set: training
+  output_dir: ${hydra:runtime.cwd}/precomputed_features/speech-commands
+  download: true
+
+hydra:
+  sweeper:
+    params:
+      preprocess.pretrained_model.name: wav2vec2, wavlm, hubert
+      preprocess.set: training, validation, testing

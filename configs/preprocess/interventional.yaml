@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+  - default.yaml
+  - _self_
+
+preprocess:
+  dataset: interventional_dataset
+  set: train_set
+  metadata_file: ${hydra:runtime.cwd}/data/synthetic/${preprocess.set}.tsv
+  data_dir: ${hydra:runtime.cwd}/data/synthetic
+  output_dir: ${hydra:runtime.cwd}/precomputed_features/synthetic
+
+hydra:
+  sweeper:
+    params:
+      preprocess.pretrained_model.name: wav2vec2, wavlm, hubert
+      preprocess.set: train_set, val_set

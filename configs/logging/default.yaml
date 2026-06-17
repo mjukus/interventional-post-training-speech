@@ -1,0 +1,5 @@
+# Default logging parameters
+logger: ???
+external_logging: false
+log_dir: logs/
+log_interval: 10

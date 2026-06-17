@@ -1,0 +1,9 @@
+model:
+  subspaces: 1
+  disentanglement_network:
+    latent_dim: 384
+
+hydra:
+  sweeper:
+    params:
+      seed: range(5) # Run with 5 different random seeds for evaluation

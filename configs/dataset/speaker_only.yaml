@@ -1,0 +1,6 @@
+# A version of the synthetic dataset instantiated with labels for only speaker interventions
+defaults:
+  - synthetic.yaml
+
+data_module:
+  use_interventions: [speaker_id]

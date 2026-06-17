@@ -1,0 +1,8 @@
+contrastive:
+  start: 1.0
+
+orth:
+  start: 1.0
+
+recon:
+  start: 1.0

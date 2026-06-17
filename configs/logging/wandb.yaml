@@ -1,0 +1,7 @@
+defaults:
+  - default.yaml
+  - _self_
+
+logger: wandb
+external_logging: true
+project_name: interventional-contrastive-speech

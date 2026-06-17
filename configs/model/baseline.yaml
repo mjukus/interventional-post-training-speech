@@ -1,0 +1,6 @@
+defaults:
+  - pooling_layer: mean
+  - _self_
+
+# Model configuration
+_target_: src.train.model.StraightThroughModel

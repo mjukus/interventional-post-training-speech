@@ -1,0 +1,26 @@
+# The default configuration for the synthetic interventional dataset, using precomputed features.
+# The top level parameters are useful for specifying which pretrained model and layer to use for feature extraction.
+model_name: wavlm
+layers: 12 # Last layer by default, but can be overridden to use different layers or all layers (null)
+subset: train_set
+
+data_module:
+  _target_: src.train.dataset.InterventionalDataModule
+  train_dataset:
+    _target_: src.train.dataset.PrecomputedPretrainedFeaturesMemMappedDataset
+    feature_dir: ${base_feature_dir}/precomputed_features/synthetic/${dataset.model_name}/train_set
+    metadata_file: ${hydra:runtime.cwd}/data/synthetic/${dataset.subset}.tsv
+    layers: ${dataset.layers}
+  val_dataset:
+    _target_: src.train.dataset.PrecomputedPretrainedFeaturesMemMappedDataset
+    feature_dir: ${base_feature_dir}/precomputed_features/synthetic/${dataset.model_name}/val_set
+    metadata_file: ${hydra:runtime.cwd}/data/synthetic/val_set.tsv
+    layers: ${dataset.layers}
+  interventions: [speaker_id, target_text]
+  shuffle: true
+  batch_size: 512
+  val_batch_size: 768
+  use_nested_tensors: true
+  num_workers: ${num_workers}
+  pin_memory: true
+  persistent_workers: true

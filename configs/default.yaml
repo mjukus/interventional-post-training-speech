@@ -1,0 +1,49 @@
+defaults:
+  - dataset: synthetic
+  - model: default
+  - loss_weights: equal_weights
+  - scheduler: one_cycle
+  - eval: default
+  - logging: tensorboard
+  - override hydra/launcher: submitit_local
+  - override hydra/job_logging: logging
+  - _self_
+
+# Misc. parameters
+job_name: default
+job_id: ${job_name}_${dirname}.${now:%Y-%m-%d_%H-%M-%S}
+seed: 42  # Default seed, multiruns on experiments will override this with a sweep of seeds
+patience: 0  # Early stopping patience; default is no early stopping
+checkpoint_dir: checkpoints
+output_dir: results
+code_dir: ${hydra:runtime.cwd}
+base_feature_dir: ${hydra:runtime.cwd}
+num_workers: 4
+
+# Optimizer parameters
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 1e-4 # Base learning rate, essentially superfluous with OneCycleLR scheduler
+
+# Trainer parameters
+trainer:
+  max_steps: 1600
+  log_every_n_steps: 16 # log every epoch at 512 batch size
+
+# Directory naming parameters
+exclude_keys:
+  - experiment
+  - logging.*
+  - hydra.*
+dirname: "${dirname: ${hydra:overrides.task}, ${exclude_keys}}"
+
+# Hydra configuration
+hydra:
+  job:
+    chdir: true
+  run:
+    dir: outputs/${job_name}/${dirname}
+  sweep:
+    dir: outputs/${job_name}
+    subdir: ${dirname}

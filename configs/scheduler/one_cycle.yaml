@@ -1,0 +1,10 @@
+defaults:
+  - default.yaml
+  - _self_
+
+_target_: torch.optim.lr_scheduler.OneCycleLR
+max_lr: 1e-4
+pct_start: 0.1
+anneal_strategy: cos
+div_factor: 25.0
+final_div_factor: 1e3

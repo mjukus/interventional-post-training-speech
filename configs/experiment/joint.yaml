@@ -1,0 +1,8 @@
+# @package _global_
+job_name: joint
+
+hydra:
+  sweeper:
+    params:
+      seed: range(5) # Run with 5 different random seeds for evaluation
+      

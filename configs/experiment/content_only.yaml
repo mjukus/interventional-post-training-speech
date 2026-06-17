@@ -1,0 +1,7 @@
+# @package _global_
+defaults:
+  - single_subspace.yaml
+  - override /dataset: content_only
+  - _self_
+
+job_name: content_only

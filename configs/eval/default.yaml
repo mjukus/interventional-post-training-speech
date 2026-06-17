@@ -1,0 +1,15 @@
+speaker:
+  feature_dir: ${base_feature_dir}/precomputed_features/voxceleb/${dataset.model_name}
+  batch_size: 64
+  sv_metadata_file: ${hydra:runtime.cwd}/data/VoxCeleb1/veri_test2.txt
+  gender_metadata_file: ${hydra:runtime.cwd}/data/VoxCeleb1/gender.txt
+  mmap: true
+
+content:
+  feature_dir: ${base_feature_dir}/precomputed_features/speech-commands/${dataset.model_name}
+  batch_size: 64
+  trainer:
+    max_epochs: 30
+  mmap: true
+
+use_nested_tensors: true

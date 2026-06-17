@@ -1,0 +1,31 @@
+# NB: This ensures that lightning logs are captured by hydra
+version: 1
+disable_existing_loggers: True
+formatters:
+  simple:
+    format: '[%(levelname)s] - %(name)s - %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: simple
+    stream: ext://sys.stdout
+  file:
+    class: logging.FileHandler
+    formatter: simple
+    filename: ${hydra.runtime.output_dir}/${hydra.job.name}.log
+loggers:
+  __main__:
+    level: INFO
+    handlers: [console, file]
+    propagate: False
+  evaluate:
+    level: INFO
+    handlers: [console, file]
+    propagate: False
+  lightning:
+    level: INFO
+    handlers: [console, file]
+    propagate: False
+root:
+  level: INFO
+  handlers: [console, file]

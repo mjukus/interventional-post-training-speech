@@ -1,0 +1,10 @@
+defaults:
+  - pooling_layer: mean
+  - disentanglement_network: mlp
+  - _self_
+
+# Model configuration
+_target_: src.train.model.InterventionalContrastiveDisentanglement
+subspaces: 2
+residual_subspace: False
+temperature: 0.1

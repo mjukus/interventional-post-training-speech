@@ -1,0 +1,11 @@
+# @package _global_
+defaults:
+  - override /model: baseline
+
+# This config is only for evaluation
+job_name: baseline
+
+hydra:
+  sweeper:
+    params:
+      seed: range(5) # Run with 5 different random seeds for evaluation

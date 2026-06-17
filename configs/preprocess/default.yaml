@@ -1,0 +1,21 @@
+# @package _global_
+defaults:
+  - override /hydra/launcher: submitit_local
+  - _self_
+
+preprocess:
+  dataset: ???
+  batch_size: 16
+  sample_rate: 16000
+  backend: torchaudio
+  pretrained_model:
+    name: wavlm # A valid S3PRL upstream model name
+  mmap: true
+  shard_size_mb: 1024 # Shard size for mmap mode; data are written to output/shards/*.bin
+
+hydra:
+  run:
+    dir: outputs/preprocess/logs/${preprocess.dataset}/${hydra.job.override_dirname}
+  sweep:
+    dir: outputs/preprocess/logs/${preprocess.dataset}
+    subdir: ${hydra.job.override_dirname}
