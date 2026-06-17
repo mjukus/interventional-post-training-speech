@@ -6,6 +6,9 @@ extends the PrecomputedFeaturesDataloader to generate interventional labels, and
 sampler for sampling batches from a dataset with dense interventions. It also includes
 specific dataset classes for interventional datasets of audio and pre-computed features,
 and a Pytorch Lightning data module which returns the training dataloaders.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 import itertools

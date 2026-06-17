@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
 
 # Collect command line arguments (positional metadata filename and optional device)
 DEVICE="cpu"

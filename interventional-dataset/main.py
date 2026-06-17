@@ -1,4 +1,8 @@
-"""Script to prepare the interventional dataset from LibriTTS."""
+"""Script to prepare the interventional dataset from LibriTTS.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
+"""
 
 import hashlib
 import logging

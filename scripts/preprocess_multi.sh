@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
 
 # Fail fast if no config is provided
 if [ -z "$1" ]; then

@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
 
 source .venv/bin/activate
 

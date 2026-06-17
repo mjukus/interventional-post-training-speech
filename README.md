@@ -85,3 +85,7 @@ By default, metrics for the runs are logged to Tensorboard. To view a run's metr
 ```bash
 uv run tensorboard --logdir=outputs/[experiment]/[run]/logs
 ```
+
+## License
+
+This project is licensed under the MIT license. See LICENSE.txt for the full license.

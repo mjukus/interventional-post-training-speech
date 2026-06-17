@@ -1,3 +1,6 @@
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
+
 _target_: src.train.disentanglement_network.MLPDisentanglementNetwork
 input_dim: ${model.pooling_layer.embedding_dim}
 hidden_dim: [768, 768]

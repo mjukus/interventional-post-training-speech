@@ -1,3 +1,6 @@
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
+
 # The default configuration for the synthetic interventional dataset, using precomputed features.
 # The top level parameters are useful for specifying which pretrained model and layer to use for feature extraction.
 model_name: wavlm

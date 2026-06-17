@@ -1,3 +1,6 @@
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
+
 # NB: This ensures that lightning logs are captured by hydra
 version: 1
 disable_existing_loggers: True

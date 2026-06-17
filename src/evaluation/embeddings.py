@@ -1,4 +1,8 @@
-"""Module for handling pre-extracted embeddings datasets and dataloaders."""
+"""Module for handling pre-extracted embeddings datasets and dataloaders.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
+"""
 
 import lightning as L  # noqa: N812 standard import for lightning
 from torch import Tensor

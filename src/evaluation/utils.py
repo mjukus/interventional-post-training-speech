@@ -1,6 +1,9 @@
 """Utility functions for evaluation.
 
 This module contains a function to plot speaker verification scores on a violin plot.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 import logging

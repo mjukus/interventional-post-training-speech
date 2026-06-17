@@ -3,6 +3,9 @@
 This module extracts features from a pre-trained model in the S3PRL upstream hub and
 saves the result to file, either with each example as a separate file, or mem-mapped
 into a single large archive.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 import logging

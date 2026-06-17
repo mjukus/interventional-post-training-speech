@@ -1,3 +1,6 @@
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
+
 defaults:
   - pooling_layer: mean
   - _self_

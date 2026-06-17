@@ -1,6 +1,9 @@
 """Module defining pooling layers for variable-length sequences.
 
 This module contains an implementation of mean pooling for variable-length sequences.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 from abc import ABC, abstractmethod

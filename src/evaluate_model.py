@@ -1,4 +1,8 @@
-"""Module for evaluating a disentanglement model on speaker and content tasks."""
+"""Module for evaluating a disentanglement model on speaker and content tasks.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
+"""
 
 import logging
 import os

@@ -3,6 +3,9 @@
 This module contains disentanglement network classes for training, including a base
 class for disentanglement networks and specific implementations of multi-layer
 perceptron and auto-encoder architectures.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 from abc import ABC, abstractmethod

@@ -3,6 +3,9 @@
 This module includes dataset, dataloader and data module classes for VoxCeleb1 and
 Speech Commands, including both raw audio datasets and datasets of pre-computed
 features.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 from pathlib import Path

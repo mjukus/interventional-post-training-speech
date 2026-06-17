@@ -1,4 +1,8 @@
-"""Module containing functions for speaker verification evaluation."""
+"""Module containing functions for speaker verification evaluation.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
+"""
 
 import logging
 from pathlib import Path

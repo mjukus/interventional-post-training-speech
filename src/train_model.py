@@ -3,6 +3,9 @@
 This module contains functions for setting up loggers, callbacks, and the training loop
 for the Interventional Contrastive Disentanglement Network. It uses Hydra for
 configuration management and Lightning for training.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 import logging

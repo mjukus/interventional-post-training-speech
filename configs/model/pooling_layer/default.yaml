@@ -1,2 +1,5 @@
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
+
 input_dim: 768
 embedding_dim: 768

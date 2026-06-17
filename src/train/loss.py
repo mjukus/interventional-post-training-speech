@@ -2,6 +2,9 @@
 
 This module contains the implementation of the interventional contrastive loss and
 orthogonality loss used for training.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 import logging
@@ -123,5 +126,5 @@ class OrthogonalityLoss(nn.Module):
         z_k_norm = F.normalize(z_k, p=2, dim=1)
         # Compute pairwise distances
         distance = torch.matmul(z_j_norm, z_k_norm.T)
-        squared_distance = distance ** 2
+        squared_distance = distance**2
         return torch.mean(squared_distance)

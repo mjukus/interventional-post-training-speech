@@ -1,4 +1,8 @@
-"""Module containing full model classes for training."""
+"""Module containing full model classes for training.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
+"""
 
 from abc import ABC, abstractmethod
 

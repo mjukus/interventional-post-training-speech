@@ -4,6 +4,9 @@ This module defines AudioDataloader and PrecomputedFeaturesDataloader classes, w
 custom collate functions for batching variable-length audio data, and the
 MemMappedDataset class, a base class for datasets that load features from memory-mapped
 files.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 from pathlib import Path

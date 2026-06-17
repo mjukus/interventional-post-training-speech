@@ -1,4 +1,8 @@
-"""Model class for evaluation on keyword spotting."""
+"""Model class for evaluation on keyword spotting.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
+"""
 
 from pathlib import Path
 

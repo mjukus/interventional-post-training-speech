@@ -3,6 +3,9 @@
 This module includes functions for converting strings to paths and nested tensors to
 padded tensors, visualising latent spaces with t-SNE, processing Weights and Biases job
 ids, setting up loggers, and generating Hydra directory names.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 import re

@@ -1,3 +1,6 @@
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
+
 # @package _global_
 defaults:
   - override /model: baseline

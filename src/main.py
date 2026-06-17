@@ -1,4 +1,8 @@
-"""Module with main entry point for sequential training and evaluation."""
+"""Module with main entry point for sequential training and evaluation.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
+"""
 
 import logging
 

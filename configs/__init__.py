@@ -1,1 +1,5 @@
-"""Hydra configuration package root."""
+"""Hydra configuration package root.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
+"""

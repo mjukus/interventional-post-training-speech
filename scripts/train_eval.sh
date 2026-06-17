@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
 
 EXPERIMENT="joint" # Default experiment name, can be overridden by command line argument
 SEED=42 # Default seed, can be overridden by command line argument

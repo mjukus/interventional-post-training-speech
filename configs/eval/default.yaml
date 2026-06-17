@@ -1,3 +1,6 @@
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
+
 speaker:
   feature_dir: ${base_feature_dir}/precomputed_features/voxceleb/${dataset.model_name}
   batch_size: 64

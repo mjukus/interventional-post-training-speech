@@ -1,4 +1,8 @@
-"""Module containing the experiment class for training."""
+"""Module containing the experiment class for training.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
+"""
 
 import inspect
 from collections.abc import Iterable

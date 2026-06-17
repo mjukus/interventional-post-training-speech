@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) Jack Cox
+# SPDX-License-Identifier: MIT
 
 MODEL="wavlm" # Default model name, can be overridden by command line argument
 # Fail fast if no config is provided

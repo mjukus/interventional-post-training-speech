@@ -2,6 +2,9 @@
 
 This module defines the `LossWeightScheduler` callback, which allows for dynamic
 adjustment of loss weights during training.
+
+Copyright (c) Jack Cox
+SPDX-License-Identifier: MIT
 """
 
 from lightning.pytorch import LightningModule, Trainer
