@@ -8,6 +8,7 @@ Copyright (c) Jack Cox
 SPDX-License-Identifier: MIT
 """
 
+import hashlib
 import re
 from pathlib import Path
 
@@ -153,7 +154,8 @@ def get_wandb_job_id(job_id: str, job_name: str) -> str:
     exp_id = re.sub(r"[:;,#\/?]", "_", job_id)
     if len(exp_id) > max_len:
         parameters = job_id.replace(f"{job_name}_", "")
-        exp_id = hash(parameters)
+        parameters_bytes = parameters.encode("utf-8")
+        exp_id = hashlib.sha256(parameters_bytes).hexdigest()[:12]
         exp_id = f"{job_name}_{exp_id}"
     return exp_id
 
@@ -200,7 +202,7 @@ def setup_loggers(
     elif log_config.logger == "tensorboard":
         tb_logger = TensorBoardLogger(
             save_dir=log_config.log_dir,
-            name=job_name,
+            name=job_id,
         )
         loggers.append(tb_logger)
     return loggers
