@@ -31,7 +31,7 @@ optimizer:
 
 # Trainer parameters
 trainer:
-  max_steps: 1600
+  max_steps: 480
   log_every_n_steps: 16 # log every epoch at 512 batch size
 
 # Directory naming parameters
