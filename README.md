@@ -88,6 +88,26 @@ By default, metrics for the runs are logged to Tensorboard. To view a run's metr
 uv run tensorboard --logdir=outputs/[experiment]/[run]/logs
 ```
 
+## Acknowledgements
+
+This work was supported by the UKRI AI Centre for Doctoral Training in Speech and Language Technologies (SLT) and their Applications funded by UK Research and Innovation [grant number EP/S023062/1]. We also acknowledge IT Services at The University of Sheffield for the provision of services for High Performance Computing.
+
+## Citation
+
+If you use this in your research, please cite the paper on arxiv as a preprint, prior to publication in the proceedings of Interspeech 2026:
+
+```bibtex
+@misc{cox2026learningtaskspecificsubspacesinterventional,
+      title={Learning task-specific subspaces via interventional post-training of speech foundation models}, 
+      author={Jack Cox and Jon Barker},
+      year={2026},
+      eprint={2606.17967},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.17967}, 
+}
+```
+
 ## License
 
 This project is licensed under the MIT license. See LICENSE.txt for the full license.
