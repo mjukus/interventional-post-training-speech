@@ -2,7 +2,7 @@
 
 [![doi: 10.5281/zenodo.20735589](https://zenodo.org/badge/DOI/10.5281/zenodo.20735589.svg)](https://doi.org/10.5281/zenodo.20735588)
 
-This is the official repository for the paper "[Learning task-specific subspaces via interventional post-training of speech foundation models](https://arxiv.org/abs/2606.17967)" in Proc. Interspeech '26.
+This is the official repository for the paper "[Learning task-specific subspaces via interventional post-training of speech foundation models](https://www.isca-archive.org/interspeech_2026/cox26_interspeech.html#)" in Proc. Interspeech '26.
 
 ## Installation
 
@@ -97,14 +97,14 @@ This work was supported by the UKRI AI Centre for Doctoral Training in Speech an
 If you use this in your research, please cite the paper on arxiv as a preprint, prior to publication in the proceedings of Interspeech 2026:
 
 ```bibtex
-@misc{cox2026learningtaskspecificsubspacesinterventional,
-      title={Learning task-specific subspaces via interventional post-training of speech foundation models}, 
-      author={Jack Cox and Jon Barker},
-      year={2026},
-      eprint={2606.17967},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2606.17967}, 
+@inproceedings{cox26_interspeech,
+  title     = {{Learning task-specific subspaces via interventional post-training of speech foundation models}},
+  author    = {Jack Cox and Jon P Barker},
+  year      = {2026},
+  booktitle = {{Interspeech 2026}},
+  pages     = {6373--6378},
+  doi       = {10.21437/Interspeech.2026-2542},
+  issn      = {2958-1796},
 }
 ```
 
