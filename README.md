@@ -45,7 +45,7 @@ bash scripts/preprocess.sh interventional [model_name] [set] # optional model an
 bash scripts/preprocess_multi.sh interventional # hydra multirun covers all models and sets
 ```
 
-Note that the set argument isn't used for VoxCeleb1, as we only use the test set.
+Note that the set argument isn't used for VoxCeleb1, as we only use the test set. Exercise caution when changing the batch size for preprocessing features, as larger batch sizes introduce more padding per sample, particularly for utterance-level data where there is a greater variance in sequence length. This padding affects the produced features and has a negative effect on training and performance on downstream tasks.
 
 ## Reproducing Our Experiments
 
